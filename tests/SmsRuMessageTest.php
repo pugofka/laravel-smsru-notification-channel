@@ -3,8 +3,9 @@
 namespace NotificationChannels\SmsRu\Test;
 
 use NotificationChannels\SmsRu\SmsRuMessage;
+use PHPUnit\Framework\TestCase;
 
-class SmsRuMessageTest extends \PHPUnit_Framework_TestCase
+class SmsRuMessageTest extends TestCase
 {
     /** @test */
     public function it_can_construct_with_a_new_message()
@@ -18,7 +19,7 @@ class SmsRuMessageTest extends \PHPUnit_Framework_TestCase
     {
         $actual = SmsRuMessage::create();
         $this->assertNull($actual->text);
-        $actual->content('Bar');
+        $actual->text('Bar');
         $this->assertEquals('Bar', $actual->text);
     }
 }

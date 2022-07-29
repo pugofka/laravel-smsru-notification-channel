@@ -17,7 +17,7 @@ class SmsWasSended
     public $notifiable;
 
     /**
-     * @param  SmsResponse  $response
+     * @param SmsResponse $response
      * @return void
      */
     public function __construct(SmsResponse $response, $notifiable)

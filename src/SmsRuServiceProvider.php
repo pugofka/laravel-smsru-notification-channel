@@ -2,10 +2,10 @@
 
 namespace NotificationChannels\SmsRu;
 
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Config;
-use Zelenin\SmsRu\Auth\ApiIdAuth;
+use Illuminate\Support\ServiceProvider;
 use Zelenin\SmsRu\Api;
+use Zelenin\SmsRu\Auth\ApiIdAuth;
 
 class SmsRuServiceProvider extends ServiceProvider
 {

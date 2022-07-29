@@ -20,23 +20,11 @@ class SmsRuMessage
     public $number;
 
     /**
-     * Message constructor.
-     *
-     * @param string $content
+     * @param $text
      */
     public function __construct($text = null)
     {
         $this->text($text);
-    }
-
-    /**
-     * @param string $content
-     *
-     * @return static
-     */
-    public static function create($text = null)
-    {
-        return new static($text);
     }
 
     /**
@@ -51,6 +39,16 @@ class SmsRuMessage
         $this->text = $text;
 
         return $this;
+    }
+
+    /**
+     * @param string $content
+     *
+     * @return static
+     */
+    public static function create($text = null)
+    {
+        return new static($text);
     }
 
     /**
@@ -88,7 +86,7 @@ class SmsRuMessage
      */
     public function toNotGiven()
     {
-        return ! $this->number;
+        return !$this->number;
     }
 
     /**
@@ -98,6 +96,6 @@ class SmsRuMessage
      */
     public function senderNotGiven()
     {
-        return ! $this->sender;
+        return !$this->sender;
     }
 }

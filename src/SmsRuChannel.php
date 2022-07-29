@@ -2,11 +2,11 @@
 
 namespace NotificationChannels\SmsRu;
 
-use NotificationChannels\SmsRu\Exceptions\CouldNotSendNotification;
 use Illuminate\Notifications\Notification;
 use Illuminate\Support\Facades\Event;
-use Zelenin\SmsRu\Entity\Sms;
+use NotificationChannels\SmsRu\Exceptions\CouldNotSendNotification;
 use Zelenin\SmsRu\Api;
+use Zelenin\SmsRu\Entity\Sms;
 
 class SmsRuChannel
 {
@@ -23,7 +23,7 @@ class SmsRuChannel
     /**
      * Constructor.
      *
-     * @param Api    $client
+     * @param Api $client
      * @param string $sender
      */
     public function __construct(Api $client, $sender = null)
@@ -49,7 +49,7 @@ class SmsRuChannel
         }
 
         if ($message->toNotGiven()) {
-            if (! $to = $notifiable->routeNotificationFor('sms_ru')) {
+            if (!$to = $notifiable->routeNotificationFor('sms_ru')) {
                 throw CouldNotSendNotification::missingRecipient();
             }
             $message->to($to);

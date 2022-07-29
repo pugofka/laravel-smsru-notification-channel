@@ -1,6 +1,6 @@
-# SMS notification channel for Laravel 5.3
+# SMS notification channel for Laravel
 
-This package makes it easy to send notifications using [sms.ru](https://sms.ru/) with Laravel 5.3.
+This package makes it easy to send notifications using [sms.ru](https://sms.ru/) with Laravel.
 
 ## Contents
 
@@ -20,7 +20,7 @@ This package makes it easy to send notifications using [sms.ru](https://sms.ru/)
 You can install this package via composer:
 
 ``` bash
-composer require enniel/laravel-smsru-notification-channel
+composer require pugofka/laravel-smsru-notification-channel
 ```
 
 Next add the service provider to your `config/app.php`:
@@ -93,7 +93,6 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Credits
 
-- [Evgeni Razumov](https://github.com/enniel)
 - [All Contributors](../../contributors)
 
 ## License
