@@ -1,15 +1,8 @@
 {
-    "name": "enniel/laravel-smsru-notification-channel",
+    "name": "pugofka/laravel-smsru-notification-channel",
     "description": "SmsRu Notifications Driver",
-    "homepage": "https://github.com/enniel/laravel-smsru-notification-channel",
+    "homepage": "https://github.com/pugofka/laravel-smsru-notification-channel",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Evgeni Razumov (Enniel)",
-            "email": "razumov.evgeni@gmail.com",
-            "homepage": "https://github.com/enniel"
-        }
-    ],
     "require": {
         "php": ">=8.0",
         "illuminate/notifications": "9.*",
