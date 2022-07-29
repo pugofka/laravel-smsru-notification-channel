@@ -7,7 +7,7 @@
         "php": ">=8.0",
         "illuminate/notifications": "9.*",
         "illuminate/support": "9.*",
-        "zelenin/smsru": "~4.1.0"
+        "zelenin/smsru": "~5"
     },
     "require-dev": {
         "mockery/mockery": "^0.9.5",
